@@ -5,17 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #aaa {border-style: solid;}
+    </style>
 </head>
 <body>
     <h1>onclick quiz</h1>
 
 <p>Spørsmål: Er himmelen blå?</p>
 
-<h2 id="aaa">hmm, hva blir svaret?:)</h2>
+<h2 id="aaa"; class="solid">hmm, hva blir svaret?:)</h2>
 <p>Svaralternativer:</p>
-<h2 onclick="doSomething()">JA</h2>
-<h2 onclick="doSomethingElse()">NEI</h2>
-<h2 onclick="doSomethingElseThree()">VET IKKE</h2>
+<h2 onclick="doSomething()">-JA</h2>
+<h2 onclick="doSomethingElse()">-NEI</h2>
+<h2 onclick="doSomethingElseThree()">-VET IKKE</h2>
 
 <script>
     function doSomething() {
