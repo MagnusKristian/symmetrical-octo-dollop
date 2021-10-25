@@ -7,6 +7,28 @@
     <title>Document</title>
 </head>
 <body>
-    ONCLICK
+    <h1>onclick quiz</h1>
+
+<p>Spørsmål: Er himmelen blå?</p>
+
+<h2 id="aaa">hmm, hva blir svaret?:)</h2>
+<p>Svaralternativer:</p>
+<h2 onclick="doSomething()">JA</h2>
+<h2 onclick="doSomethingElse()">NEI</h2>
+<h2 onclick="doSomethingElseThree()">VET IKKE</h2>
+
+<script>
+    function doSomething() {
+        document.getElementById('aaa').innerHTML = 'JA, DEN ER BLÅ';
+    }
+    function doSomethingElse() {
+        document.getElementById('aaa').innerHTML = 'NEI, NÅ TULLA DU';
+    }
+    function doSomethingElseThree() {
+        document.getElementById('aaa').innerHTML = 'VANSKELIG Å VITE?';
+    }
+</script>
+
+
 </body>
 </html>
