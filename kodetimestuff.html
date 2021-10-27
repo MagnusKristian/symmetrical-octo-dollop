@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="div1" onclick="sendDette(this,'blue')">div1</div>
+    <div id="div2" onclick="sendDette(this, 'green ')">div2</div>
+    <div id="div3" onclick="sendDette(this, 'purple')">div3</div>
+    <div id="div4" onclick="sendDette(this, 'red')">div4</div>
+    <div id="div5" onclick="sendDette(this, 'brown')">div5</div> 
+    <br>
+    <div id="divX" > </div>
+
+    
+
+    <script>
+        function sendDette(element, color) {
+            document.getElementById('divX').innerHTML += element.innerHTML + '</br>';
+            element.innerHTML=  `<div style="background-color: ${color};"> ${element.innerHTML} </div>`;
+        }
+
+
+//.style.color = ${color};
+
+    </script>
+
+</body>
+</html>
