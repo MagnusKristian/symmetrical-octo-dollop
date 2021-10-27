@@ -4,27 +4,34 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+
+    <style>
+        table, th, td {
+          border: 1px solid black;
+        }
+        </style>
 </head>
 <body>
    
 
-    <table ><tr><td onmouseover="makex(this)">o</td>
-        <td onmouseover="makex(this)">o</td>
-        <td>o</td>
-        <td>o</td>
+    <table style="width:400px; height: 400px;"><tr>
+        <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+        <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+        <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+        <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
         </tr>
 
         <tr>
-            <td onmouseover="makex(this)">o</td>
-            <td onmouseover="makex(this)">o</td>
-            <td>o</td>
-            <td>o</td>
+            <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+            <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+            <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+            <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
         </tr>
         <tr>
-            <td>o</td>
-            <td>o</td>
-            <td>o</td>
-            <td>o</td>
+            <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+            <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+            <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
+            <td onmouseover="makex(this)" onmouseout="makeotox(this)">o</td>
         </tr>
     </table>
 
@@ -35,6 +42,10 @@
 
         }
  
+        function makeotox(gjørdetomtilo) {
+            gjørdetomtilo.innerHTML = 'o'
+
+        }
         
     </script>
 
